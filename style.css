@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Prompt', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+#navbar{
+    font-family: 'Prompt', sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    color:white;
+    background-color: #CD4806;
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-link{
+    display: block;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    padding: 1rem 30px;
+}
+.nav-link:hover {
+    background: #3E3C3C;
+}
+#welcome-section{
+    width: 100%;
+    height: 100vh;
+    background-color: #3E3C3C  ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#my-name{
+    font-family: 'Prompt', sans-serif;
+    color: white;
+    font-size: 50px;
+}
+#my-work{
+    color: #CD4806;
+    font-family: 'Prompt', sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+}
+#projects{
+    background-color: #5342B6 ;
+    text-align: center;
+    padding: 5rem 2rem;
+    
+}
+#work-title{
+    padding: 10px;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 6rem;
+}
+@media(max-width:1000px){
+    #work-title{
+        font-size: 39px;
+    }
+}
+#work-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+#work-grid a{
+    text-decoration: none;
+}
+.project-tile{
+    text-align: center;
+    border-radius: 50px;
+}
+.project-img{
+    display: block;
+    width: 100%;
+}
+.project-caption{
+    text-decoration: none;
+    padding: 10px;
+    color: #CD4806;
+    font-size: 25px;
+    background-color: #3E3C3C;
+}
+.project-code{
+    color:#3E3C3C;
+}
+.project-tile:hover
+.project-code{
+    color: #CD4806;
+}
+
+#contacts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #3E3C3C;
+    width: 100%;
+    height: 90vh;
+}
+#contacts-header{
+    margin-bottom: 20px;
+}
+#contacts-header-title{
+    color: white;
+    font-size: 40px;
+    padding: 20px;
+}
+#contacts-header-desc{
+    color: #CD4806;
+    font-size: 20px;
+    line-height: 40px;
+}
+#contact-links{
+    display: flex;
+    margin-top: 4rem;
+    max-width: 920px;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+#profile-link:hover {
+    transform: translateY(8px);
+}
+#profile-link{
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    font-size: 25px;
+    transition: transform 0.3s ease-out;
+}
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    background-color: #3E3C3C;
+    color: white;
+    padding-bottom: 10px;
+    border-top: 4px solid #CD4806;
+}
+#footer-text{
+    padding: 10px;
+    font-size: 20px;
+    
+}
